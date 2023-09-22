@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+        <nav class="navbar">
+            <a href="#" style="--i:1" class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skill</a>
+            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#" style="--i:5">Contact</a>
+        </nav>
+    </header>
+    <section class="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Manya Bhardwaj</h1>
+            <h3> And I'm a<span class="text"></span>
+                <span id="typed"></span>
+                <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed('#typed', {
+                        strings: ['Web Developer', 'Web Designer', 'UI/UX Designer'],
+                        typeSpeed: 50,
+                        backSpeed: 50,
+                        loop: true
+                    });
+                    var tablinks = document.getElementsByClassName("tab-links");
+                    var tabcontents = document.getElementsByClassName("tab-contents");
+
+                    function openTab(tabname) {
+                        for (tablink of tablinks) {
+                            tablink.classList.remove("active-link");
+                        }
+                        for (tabcontent of tabcontents) {
+                            tabcontent.classList.remove("active-tab");
+                        }
+
+                    }
+                </script>
+            </h3>
+            <p>I'm a Web Developer with Extensive Freelance experience of over a 1 year.
+                <br>expertise is to create and develop websites and web applications.
+            </p>
+            <div class="home-sci">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram'></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-linkedin'></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-behance'></i></a>
+
+            </div>
+
+            <a href="#" class="read">Hire me</a>
+        </div>
+        <span class="home-imgHover"></span>
+    </section>
+
+    <script src="script.js"></script>
+    <section class="about" id="about">
+        <!--- <div class="about-img">
+            <img src="2360_R0lVIE5JQyA0OTctNDM.jpg"> --->
+
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum tenetur nisi reiciendis officiis
+                atque quidem mollitia impedit nesciunt deserunt, cum reprehenderit ullam eos quas earum optio
+                laudantium veritatis. Quod, voluptate.</p>
+            <div class="container">
+                
+                <div class="services-list">
+                    <div class="exp">
+
+                        <h2>Experience</h2>
+                        <ul>
+                            <li><span>2023(January-June) </span><br>Manya holiday as Web designer</li>
+                            <br>
+                            <br>
+                            <li><span>2023(August-September) </span><br>Topper world as Web developer</li>
+                        </ul>
+                        <a href="#" class="read">More</a>
+                    </div>
+                    <div class="edu">
+
+                        <h2>Education</h2>
+                        <ul>
+                            <li><span>Graduation(2022-2025)</span><br>Bachelor's of Computer Applications</li>
+                            <br>
+                            <br>
+                            <li><span>12th</span><br>Senior Secondary</li>
+                        </ul>
+                        <a href="#" class="read">More</a>
+                    </div>
+                    <div class="skill">
+
+                        <h2>Skills</h2>
+                        <ul>
+                            <li><span>Ui/UX desinging</span></li>
+                            <br>
+                            <li><span>Web development</span></li>
+                            <br>
+                            <li><span>Java</span></li>
+                            <br>
+                            <li><span>C language</span></li>
+                        </ul>
+
+                        <a href="#" class="read">More</a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My<span>Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <i class='bx bx-code-alt' style='color:#00eeff'></i>
+                        <h2>UI/UX Designing</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates exercitationem
+                            soluta dolores, vero aperiam earum, quae, neque similique adipisci doloremque natus commodi
+                            inventore sequi quam aliquid itaque non officiis.</p>
+                        <a href="#" class="read"> More</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-crop' style='color:#00eeff'></i>
+                        <h2>Web Development</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates exercitationem
+                            soluta dolores, vero aperiam earum, quae, neque similique adipisci doloremque natus commodi
+                            inventore sequi quam aliquid itaque non officiis.</p>
+                        <a href="#" class="read"> More</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-apple' style='color:#00eeff'></i>
+                        <h2>Java Programming</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat voluptates exercitationem
+                            soluta dolores, vero aperiam earum, quae, neque similique adipisci doloremque natus commodi
+                            inventore sequi quam aliquid itaque non officiis.</p>
+                        <a href="#" class="read"> More</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <div id="portfolio">
+            <div class="container">
+
+                
+                    <h1 class="sub-title">My<span>Projects</span></h1>
+                    <div class="work-list">
+                        <div class="work">
+                        <img src="/Screenshot 2023-09-22 220832.png">
+                        <div class="layer">
+                            <h3>Study Course Website</h3>
+                            <a href="#" class="read">View</a>
+                        </div>
+                    </div>
+                    
+                    <div class="work">
+                        <img src="/Screenshot 2023-09-22 222150.png">
+                        <div class="layer">
+                            <h3>Travel Website</h3>
+                            <a href="#" class="read">View</a>
+                        </div>
+                    </div>
+                    
+                    <div class="work">
+                      
+                        <img src="/Screenshot 2023-09-22 222342.png">
+                        <div class="layer">
+                            <h3>Wedding Card Website</h3>
+                            <a href="#" class="read">View</a>
+                        </div>
+                    </div>
+                    </div>
+
+                    </div>
+                </div>
+                <a href="#" class="btn">See More</a>
+            </div>
+        </div>
+        
+    </section>
+
+<!-----Contact------>
+
+<div id="Contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact<span>Me</span></h1>
+                <p><i class='bx bxs-envelope' style='color:#00eeff' ></i>Manyab485@gmail.com</p>
+                <p><i class='bx bxs-phone' style='color:#00eeff' ></i>9818904722</p>
+                <div class="social-icons">
+                    <a href="#" ><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                    <a href="#"><i class='bx bxl-behance'></i></a>
+                </div>
+                <a href="#" class="btn2">Download CV</a>
+
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Type Your Message Here"></textarea>
+                    <button class="btn2"   type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </div>
+</div>
+
+
+    
+
+    
+</body>
+
+</html>
