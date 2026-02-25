@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Projects</title>
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: #f9f7eb;
+      }
+
+      /* hide scrollbars */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      /* filter styles */
+      .filter-btn {
+        padding: 6px 16px;
+        border: 1px solid #214d36;
+        border-radius: 999px;
+        font-size: 14px;
+        color: #214d36;
+        transition: 0.2s;
+      }
+
+      .filter-btn:hover {
+        background: #214d36;
+        color: white;
+      }
+
+      .active-filter {
+        background: #214d36;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="px-6 md:px-20 py-16">
+    <!-- BACK -->
+    <a href="index.html" class="text-[#214D36] font-semibold hover:underline">
+      ← Back to Portfolio
+    </a>
+
+    <!-- HEADING -->
+    <h1 class="text-5xl font-semibold text-[#214D36] mb-6 mt-8">Projects</h1>
+
+    <div class="w-20 h-[3px] bg-[#214D36] mb-16"></div>
+
+    <!-- FILTER BAR -->
+    <div class="flex flex-wrap gap-3 mb-16">
+      <button class="filter-btn active-filter" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="food">Food & Commerce</button>
+      <button class="filter-btn" data-filter="saas">SaaS Product</button>
+      <button class="filter-btn" data-filter="fintech">Fintech</button>
+      <button class="filter-btn" data-filter="prd">PRD</button>
+      <button class="filter-btn" data-filter="report">Reports</button>
+    </div>
+
+    <!-- ================= FOOD & COMMERCE ================= -->
+    <div class="industry-section" data-category="food">
+      <h2 class="text-lg tracking-[0.35em] text-[#214D36] mb-8">
+        FOOD & COMMERCE
+      </h2>
+
+      <div class="flex gap-10 overflow-x-auto scrollbar-hide pb-6 mb-20">
+        <!-- Blinkit -->
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project1.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            Blinkit — Product Teardown
+          </h3>
+          <p class="text-[#4F6256] mt-2">
+            How urgency psychology creates repeat usage.
+          </p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="Blinkit-Teardown-Product.pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="Blinkit-Teardown-Product.pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Zomato -->
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project2.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            Zomato — Experience Redesign
+          </h3>
+          <p class="text-[#4F6256] mt-2">Reducing support friction & churn.</p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="Presentation - Improving Zomato.pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="Presentation - Improving Zomato.pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+
+        <!-- Zepto -->
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project3.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            Zepto — Product Teardown
+          </h3>
+          <p class="text-[#4F6256] mt-2">Rapid delivery behavior loops.</p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="Zepto Product Teardown (Deep Dive).pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="Zepto Product Teardown (Deep Dive).pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= SAAS PRODUCT ================= -->
+    <div class="industry-section" data-category="saas">
+      <h2 class="text-lg tracking-[0.35em] text-[#214D36] mb-8">
+        SAAS PRODUCT
+      </h2>
+
+      <div class="flex gap-10 overflow-x-auto scrollbar-hide pb-6 mb-20">
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project5.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            Pulse — UX Case Study
+          </h3>
+          <p class="text-[#4F6256] mt-2">Improving onboarding clarity.</p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="Pulse Strategic Product Deck (1).pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="Pulse Strategic Product Deck (1).pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ================= FINTECH ================= -->
+    <div class="industry-section" data-category="fintech">
+      <h2 class="text-lg tracking-[0.35em] text-[#214D36] mb-6">FINTECH</h2>
+
+      <div class="flex gap-10 overflow-x-auto scrollbar-hide pb-6 mb-20">
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="projectt4.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            IRCTC — Product Teardown
+          </h3>
+          <p class="text-[#4F6256] mt-2">
+            Improving trust & booking flow clarity.
+          </p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="IRCTC Product Teardown (1).pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="IRCTC Product Teardown (1).pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+      <!-- ================= Reports ================= -->
+    <div class="industry-section" data-category="report">
+      <h2 class="text-lg tracking-[0.35em] text-[#214D36] mb-8">
+      Reports & Research
+      </h2>
+
+      <div class="flex gap-10 overflow-x-auto scrollbar-hide pb-6 mb-20">
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project6.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+            Future of EVs in India — Research Report
+          </h3>
+          <p class="text-[#4F6256] mt-2">Detailed analysis of the Indian EV market landscape and future trends.</p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="EV Report.pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="EV Report.pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+     <!-- ================= PRD ================= -->
+    <div class="industry-section" data-category="prd">
+      <h2 class="text-lg tracking-[0.35em] text-[#214D36] mb-6">PRD (Product Requirement Document)</h2>
+
+      <div class="flex gap-10 overflow-x-auto scrollbar-hide pb-6 mb-20">
+        <div class="min-w-[320px] max-w-[320px]">
+          <img src="project7.png" class="rounded-lg mb-4" />
+          <h3 class="text-xl font-semibold text-[#214D36]">
+           Vision Dataset Platform — PRD
+          </h3>
+          <p class="text-[#4F6256] mt-2">
+            A comprehensive PRD for a vision dataset platform, detailing product features, user stories, and technical requirements to guide development and ensure alignment with business goals.
+          </p>
+          <div class="flex items-center gap-5 mt-4">
+            <a
+              href="Manyabhardwaj-ProductManagementInternTask.pdf"
+              target="_blank"
+              class="text-[#214D36] font-semibold hover:underline"
+            >
+              View →
+            </a>
+            <a
+              href="Manyabhardwaj-ProductManagementInternTask.pdf"
+              download
+              class="flex items-center gap-2 bg-[#214D36] text-white px-4 py-2 rounded-lg text-sm hover:opacity-90 transition"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v3.1a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5V10.4a.5.5 0 0 1 1 0v3.1A1.5 1.5 0 0 1 14.5 15h-13A1.5 1.5 0 0 1 0 13.5V10.4a.5.5 0 0 1 .5-.5z"
+                />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                />
+              </svg>
+              PDF
+            </a>
+          </div>
+        </div>
+        
+      </div>
+
+    </div>
+
+    <script>
+      const buttons = document.querySelectorAll(".filter-btn");
+      const sections = document.querySelectorAll(".industry-section");
+
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((b) => b.classList.remove("active-filter"));
+          button.classList.add("active-filter");
+
+          const filter = button.dataset.filter;
+
+          sections.forEach((section) => {
+            if (filter === "all" || section.dataset.category === filter) {
+              section.style.display = "";
+            } else {
+              section.style.display = "none";
+            }
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
